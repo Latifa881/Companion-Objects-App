@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/llMain"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="Type Day or Night \nto Change the Background"
+        android:textColor="@color/purple_700"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/etChangeBackground"
+            android:layout_width="match_parent"
+            android:layout_margin="40dp"
+            android:maxLength="5"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Enter Day or Night" />
+
+        <Button
+            android:id="@+id/btChangeBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Change Background" />
+    </LinearLayout>
+</LinearLayout>
